@@ -1,0 +1,98 @@
+#survey-form
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: $background-color;
+    height: $form-height;
+    width: calc($image-width + $textarea-width + 15px);
+    box-shadow: $form-shadow;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#text
+{
+    text-align: center;
+}
+
+img
+{
+    width:$image-width;
+    height:100%;
+    border-radius: 15px;
+}
+div
+{
+    width: calc($textarea-width - 10px);
+}
+
+div, p
+{
+    color:$text-color;
+    text-shadow: 1px 0.5px 0 $text-shadow;
+}
+
+body, p, input, select, textarea
+{
+    @include font-fam-pad;
+}
+
+input[type="text"], input[type="email"],
+input[type="number"], select, textarea
+{
+    @include input-modify;
+}
+
+input[type="text"]
+{
+    width: 90%;
+}
+
+input[type="email"]
+{
+    width: 225px;
+}
+
+input[type="number"]
+{
+    position: relative;
+    right: 1px;
+}
+
+.align-flex
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    p
+    {
+        width: 100%;
+    }
+}
+
+#name-label
+{
+    width: 100%;
+}
+
+#lastname-label
+{
+    @extend #name-label;
+    position:relative;
+    left: 25px;
+}
+
+
+#radio, #checkbox
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#comments
+{
+    padding: 10px 0px 10px 0px;
+    width: $textarea-width;
+}

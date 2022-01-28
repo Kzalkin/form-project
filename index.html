@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+  <form action="#" method="get" id="survey-form">
+      <div id="text">
+    <h1 id="title">Mars Settlers Application</h1>
+    <p id="description">Become one of the first human to set foot on Mars</p>
+      </div>
+    <div id="name-email" class="align-flex">
+        <label for="firstname" id="name-label"> <!--First Name:-->
+            <input type="text" name="firstname" id="firstname" required placeholder="First Name">
+        </label>
+        <label for="lastname" id="lastname-label"> <!--Last Name:-->
+            <input type="text" name="lastname" id="lastname" required placeholder="Last Name">
+        </label>
+    </div>
+    <div id="age-birthday" class="align-flex">
+        <label for="email" id="email-label"><!--E-Mail:-->
+            <input type="email" name="email" id="email" required placeholder="Email Address">
+        </label>
+        <label for="number" id="number-label"><!--Age:-->
+            <input type="number" name="Age" id="number" min="21" max="45" required placeholder="Age">
+            </label>
+        <label for="gender" id="gender"><!--Sex:-->
+            <select name="gender" id="gender">
+                <option value="">Sex</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            </label>
+    </div>
+    <div id="radio" class="align-flex">
+        <p>Employment Sector:</p>
+        <label for="test">
+        <input type="radio" name="radio" value="Primary" id="test">
+        Primary</label>
+        <label for="test1">
+        <input type="radio" name="radio" value="Secondary" id="test1">
+        Secondary</label>
+        <label for="test2">
+        <input type="radio" name="radio" value="Tertiary" id="test2">
+        Tertiary</label>
+        <label for="test3">
+        <input type="radio" name="radio" value="Unemployed" id="test3">
+        Unemployed</label>
+    </div>
+    <div id="checkbox" class="align-flex">
+        <p>Educational Attainment:</p>
+        <label for="test4">
+        <input type="checkbox" name="checkbox" id="test4" value="Primary">
+        Primary</label>
+        <label for="test5">
+        <input type="checkbox" name="checkbox" id="test5" value="Secondary">
+        Secondary</label>
+        <label for="test6">
+        <input type="checkbox" name="checkbox" id="test6" value="Tertiary">
+        Tertiary</label>
+        <label for="test7">
+        <input type="checkbox" name="checkbox" id="test7" value="Vocational">
+        Vocational</label>
+    </div>
+    <div id="comments">
+        <textarea name="comments" id="comments" cols="50" rows="10" placeholder="Other Information"></textarea>
+    </div>
+    <div id="button-div">
+        <button type="submit">Submit</button>
+    </div>
+    <img src="https://c4.wallpaperflare.com/wallpaper/729/366/429/mars-mission-4k-8k-hd-wallpaper-preview.jpg" alt="Mars">
+  </form>
+    </main>
+</body>
+</html>

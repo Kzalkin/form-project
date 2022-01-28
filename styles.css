@@ -1,0 +1,129 @@
+body {
+  background-color: #ad7979;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30px;
+}
+
+#survey-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: white;
+  height: 680px;
+  width: 1325px;
+  box-shadow: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#text {
+  text-align: center;
+}
+
+img {
+  width: 800px;
+  height: 100%;
+  border-radius: 15px;
+}
+
+div {
+  width: 500px;
+}
+
+div, p {
+  color: #7e5f42;
+  text-shadow: 1px 0.5px 0 #aaa8a8;
+}
+
+body, p, input, select, textarea {
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 5px;
+}
+
+input[type=text], input[type=email],
+input[type=number], select, textarea {
+  box-shadow: inset 2px 2px 5px #8b8b8b;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
+  border-color: white;
+}
+input[type=text]:focus, input[type=email]:focus,
+input[type=number]:focus, select:focus, textarea:focus {
+  box-shadow: inset 1px 1px 2px #8b8b8b;
+}
+
+input[type=text] {
+  width: 90%;
+}
+
+input[type=email] {
+  width: 225px;
+}
+
+input[type=number] {
+  position: relative;
+  right: 1px;
+}
+
+.align-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+}
+.align-flex p {
+  width: 100%;
+}
+
+#name-label, #lastname-label {
+  width: 100%;
+}
+
+#lastname-label {
+  position: relative;
+  left: 25px;
+}
+
+#radio, #checkbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#comments {
+  padding: 10px 0px 10px 0px;
+  width: 510px;
+}
+
+#button-div {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+button {
+  border-radius: 15px;
+  border-color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  color: #61677c;
+  box-shadow: 5px 5px 5px #8b8b8b;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  box-shadow: 2px 2px 5px #8b8b8b;
+  color: red;
+}
+button:active {
+  box-shadow: inset 1px 1px 2px #8b8b8b;
+}
+
+/*# sourceMappingURL=styles.css.map */

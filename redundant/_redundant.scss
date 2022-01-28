@@ -1,0 +1,29 @@
+@mixin font-fam-pad
+{
+    font-family: $font-fam;
+    font-size: $font-size;
+    padding: 5px;
+}
+
+@mixin input-shadow-size-transi 
+{
+    box-shadow: inset 2px 2px 5px $form-input-shadow;    
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+@mixin input-border-rad-color
+{
+    border-radius:15px;
+    border-color: $border-color;
+}
+
+@mixin input-modify
+{
+    @include input-shadow-size-transi;
+    @include input-border-rad-color;
+    &:focus
+    {
+        box-shadow: inset 1px 1px 2px $form-input-shadow;
+    }
+}
