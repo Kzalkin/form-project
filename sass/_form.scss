@@ -60,18 +60,6 @@ input[type="number"]
     right: 1px;
 }
 
-.align-flex
-{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5px;
-    p
-    {
-        width: 100%;
-    }
-}
-
 #name-label
 {
     width: 100%;
@@ -82,6 +70,18 @@ input[type="number"]
     @extend #name-label;
     position:relative;
     left: 25px;
+}
+
+.align-flex
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    p
+    {
+        @extend #name-label
+    }
 }
 
 
